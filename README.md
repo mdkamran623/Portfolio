@@ -49,29 +49,4 @@ Inside this portfolio, I have also highlighted several of my core projects:
 
 ---
 
-## 💻 Getting Started (Local Setup)
-
-To run this portfolio on your local machine:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com
-   ```
-2. **Navigate into the directory:**
-   ```bash
-   cd YOUR_REPO_NAME
-   ```
-3. **Open the project:**
-   Simply open `index.html` in your favorite web browser or use the **Live Server** extension in VS Code.
-
----
-
-## 🤝 Let's Connect!
-
-I love turning complex ideas into elegant, high-performance digital experiences. Whether you have a project in mind or just want to chat about tech, let's link up!
-
-- **Portfolio Website:** [mdkamran623-portfolio.netlify.app](https://mdkamran623-portfolio.netlify.app/)
-- **GitHub:** [@YOUR_GITHUB_USERNAME](https://mdkamran623.github.io/Portfolio)
-
----
 *Created with ❤️ by MD KAMRAN — 2026*
