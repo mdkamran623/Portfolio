@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD KAMRAN - Full Stack Developer</title>
+<meta name="description" content="MD Kamran - Full Stack Developer. Building scalable web apps with modern technologies.">
+<meta name="google-site-verification" content="5mZiHkQ_SyAQIGEawgKsCRuPFvOTwZyd94HOA_JtLuA">
+<meta name="google-site-verification" content="KKo8POwBh3VmgEjsXEy_L6UxGnTBpPtueiaBy_826XI">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-logo">MK</div>
+  <div class="ld-bar"><div class="ld-fill" id="ldFill"></div></div>
+  <div class="ld-pct" id="ldPct">0%</div>
+</div>
+
+<div id="sp"></div>
+<div id="cur"></div>
+<div id="cur2"></div>
+
+<!-- BG -->
+<div class="bg-wrap">
+  <div class="bg-orb o1"></div>
+  <div class="bg-orb o2"></div>
+  <div class="bg-orb o3"></div>
+</div>
+<div class="bg-grid"></div>
+<canvas id="stars"></canvas>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="logo">MD KAMRAN</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="hire-btn">Hire Me</a>
+  <div class="menu-toggle" id="menuToggle">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <div class="hero-tag-dot"></div>
+      <span>Available for Freelance Projects</span>
+    </div>
+    <h1 class="hero-name" data-text="MD KAMRAN">MD KAMRAN</h1>
+    <div class="hero-typed">
+      I craft <span class="typed-word" id="typedWord">scalable web apps</span>
+    </div>
+    <p class="hero-desc">Full Stack Developer · Creative Designer · Problem Solver<br>Turning complex ideas into elegant, high-performance digital experiences.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-mouse"></div>
+  </div>
+</section>
+
+<!-- ABOUT / DP -->
+<section id="about" class="reveal">
+  <div class="dp-container">
+    <div class="dp-wrapper">
+      <div class="dp-spin"></div>
+      <div class="dp-spin2"></div>
+      <div class="dp-ring r1"></div>
+      <div class="dp-ring r2"></div>
+      <div class="dp-ring r3"></div>
+      <div class="dp-frame">
+        <img src="MD KAMRAN-DP.jpg" alt="MD Kamran" onerror="this.parentElement.innerHTML='<div class=dp-placeholder>MK</div>'">
+      </div>
+      <div class="dp-corner tl"></div>
+      <div class="dp-corner br"></div>
+    </div>
+    <div class="dp-info reveal-r">
+      <div class="sec-label">About Me</div>
+      <h2 class="sec-title">MD KAMRAN</h2>
+      <h3>Full Stack Developer</h3>
+      <p>Passionate about creating innovative digital solutions that fuse cutting-edge technology with stunning design. I transform complex problems into elegant, user-friendly experiences — from pixel-perfect frontends to rock-solid backends.</p>
+      <p>My journey in tech is driven by curiosity and an unrelenting desire to push boundaries. I believe great software should be fast, beautiful, and accessible to everyone.</p>
+      <div class="dp-stats">
+        <div class="stat-card stagger-item">
+          <span class="stat-num" data-target="30">0</span>
+          <div class="stat-lbl">Projects</div>
+        </div>
+        <div class="stat-card stagger-item" style="transition-delay:.1s">
+          <span class="stat-num" data-target="2">0</span>
+          <div class="stat-lbl">Years Exp</div>
+        </div>
+        <div class="stat-card stagger-item" style="transition-delay:.2s">
+          <span class="stat-num" data-target="100">0</span>
+          <div class="stat-lbl">% Satisfied</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+  <div style="text-align:center;margin-bottom:4rem">
+    <div class="sec-label" style="justify-content:center">Technical Arsenal</div>
+    <h2 class="sec-title" style="text-align:center">My Skills</h2>
+    <div class="sec-line" style="margin:1.5rem auto 0"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card stagger-item">
+      <span class="sk-icon">⚛️</span>
+      <div class="sk-name">React.js</div>
+      <div class="sk-bar"><div class="sk-fill" data-w="95"></div></div>
+      <div class="sk-pct">95%</div>
+    </div>
+    <div class="skill-card stagger-item" style="transition-delay:.08s">
+      <span class="sk-icon">💻</span>
+      <div class="sk-name">JavaScript</div>
+      <div class="sk-bar"><div class="sk-fill" data-w="90"></div></div>
+      <div class="sk-pct">90%</div>
+    </div>
+    <div class="skill-card stagger-item" style="transition-delay:.16s">
+      <span class="sk-icon">🚀</span>
+      <div class="sk-name">HTML5 / CSS3</div>
+      <div class="sk-bar"><div class="sk-fill" data-w="95"></div></div>
+      <div class="sk-pct">95%</div>
+    </div>
+    <div class="skill-card stagger-item" style="transition-delay:.24s">
+      <span class="sk-icon">☕</span>
+      <div class="sk-name">Java</div>
+      <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div>
+      <div class="sk-pct">85%</div>
+    </div>
+    <div class="skill-card stagger-item" style="transition-delay:.32s">
+      <span class="sk-icon">🐍</span>
+      <div class="sk-name">Python</div>
+      <div class="sk-bar"><div class="sk-fill" data-w="80"></div></div>
+      <div class="sk-pct">80%</div>
+    </div>
+    <div class="skill-card stagger-item" style="transition-delay:.4s">
+      <span class="sk-icon">🗄️</span>
+      <div class="sk-name">SQL / MongoDB</div>
+      <div class="sk-bar"><div class="sk-fill" data-w="78"></div></div>
+      <div class="sk-pct">78%</div>
+    </div>
+    <div class="skill-card stagger-item" style="transition-delay:.48s">
+      <span class="sk-icon">🐙</span>
+      <div class="sk-name">Git / GitHub</div>
+      <div class="sk-bar"><div class="sk-fill" data-w="88"></div></div>
+      <div class="sk-pct">88%</div>
+    </div>
+    <div class="skill-card stagger-item" style="transition-delay:.56s">
+      <span class="sk-icon">🎨</span>
+      <div class="sk-name">UI / UX Design</div>
+      <div class="sk-bar"><div class="sk-fill" data-w="82"></div></div>
+      <div class="sk-pct">82%</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <div style="margin-bottom:3rem">
+    <div class="sec-label">My Work</div>
+    <h2 class="sec-title">Featured Projects</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="proj-filter">
+    <button class="flt-btn active" data-f="all">All Projects</button>
+    <button class="flt-btn" data-f="clone">Clones</button>
+    <button class="flt-btn" data-f="app">Web Apps</button>
+    <button class="flt-btn" data-f="map">Interactive</button>
+  </div>
+  <div class="projects-grid">
+
+    <!-- Amazon Clone -->
+    <div class="project-card stagger-item" data-cat="clone">
+      <div class="proj-img">
+        <div class="proj-img-bg" style="background:linear-gradient(135deg,#131921,#232f3e,#ff9900,#1a1a2e)"></div>
+        <div class="proj-img-shine"></div>
+        <span class="proj-emoji">🛒</span>
+      </div>
+      <div class="proj-overlay">
+        <div class="proj-links">
+          <a href="https://mdkamran623.github.io/Amazon-clone/" target="_blank" rel="noopener" class="proj-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/mdkamran623/Amazon-clone" target="_blank" rel="noopener" class="proj-link code"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-cat">E-Commerce Clone</div>
+        <div class="proj-title">Amazon Clone</div>
+        <p class="proj-desc">A pixel-perfect, fully responsive clone of the Amazon homepage featuring a real-like navigation bar, hero banner, product grid cards, department categories, and a polished footer — all built from scratch with pure HTML & CSS.</p>
+        <div class="proj-tech">
+          <span>HTML5</span><span>CSS3</span><span>Responsive</span><span>UI Clone</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- To-do App -->
+    <div class="project-card stagger-item" data-cat="app" style="transition-delay:.1s">
+      <div class="proj-img">
+        <div class="proj-img-bg" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364,#00ff88)"></div>
+        <div class="proj-img-shine"></div>
+        <span class="proj-emoji">✅</span>
+      </div>
+      <div class="proj-overlay">
+        <div class="proj-links">
+          <a href="https://mdkamran623.github.io/To-do-app/" target="_blank" rel="noopener" class="proj-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/mdkamran623/To-do-app" target="_blank" rel="noopener" class="proj-link code"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-cat">Productivity App</div>
+        <div class="proj-title">To-Do App</div>
+        <p class="proj-desc">A sleek, fully functional task management app with add/delete tasks, mark-complete toggle, local persistence, and a clean animated UI. Lightweight, fast, and zero dependencies — pure vanilla JavaScript magic.</p>
+        <div class="proj-tech">
+          <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>LocalStorage</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Macet Clone -->
+    <div class="project-card stagger-item" data-cat="clone" style="transition-delay:.2s">
+      <div class="proj-img">
+        <div class="proj-img-bg" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460,#e94560)"></div>
+        <div class="proj-img-shine"></div>
+        <span class="proj-emoji">🎯</span>
+      </div>
+      <div class="proj-overlay">
+        <div class="proj-links">
+          <a href="https://ak-project-macet-clone.netlify.app/" target="_blank" rel="noopener" class="proj-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-cat">Website Clone</div>
+        <div class="proj-title">Macet Clone</div>
+        <p class="proj-desc">A high-fidelity recreation of the Macet platform UI with smooth scroll behaviour, modern card layouts, animated sections, responsive breakpoints, and carefully matched typography and colour schemes.</p>
+        <div class="proj-tech">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Netlify</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- World Map 2026 -->
+    <div class="project-card stagger-item" data-cat="map" style="transition-delay:.3s">
+      <div class="proj-img">
+        <div class="proj-img-bg" style="background:linear-gradient(135deg,#000428,#004e92,#00c6ff,#0072ff)"></div>
+        <div class="proj-img-shine"></div>
+        <span class="proj-emoji">🌍</span>
+      </div>
+      <div class="proj-overlay">
+        <div class="proj-links">
+          <a href="https://world-map-2026.netlify.app/" target="_blank" rel="noopener" class="proj-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-cat">Interactive App</div>
+        <div class="proj-title">World Map 2026</div>
+        <p class="proj-desc">An interactive world map application featuring clickable countries, real-time country info display, hover highlighting, zoom/pan controls, and dynamic data overlays — a beautiful geography explorer for 2026.</p>
+        <div class="proj-tech">
+          <span>JavaScript</span><span>SVG</span><span>Geo Data</span><span>Netlify</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <div class="contact-wrap">
+    <div style="text-align:center;margin-bottom:1rem">
+      <div class="sec-label" style="justify-content:center">Let's Connect</div>
+      <h2 class="sec-title" style="text-align:center">Get In Touch</h2>
+      <div class="sec-line" style="margin:1.5rem auto 0"></div>
+    </div>
+    <p style="text-align:center;color:var(--txt2);font-size:1.1rem;margin-bottom:.5rem">Have a project in mind? Let's work together to create something amazing!</p>
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mykdjkgl" method="post">
+      <div class="fg-row">
+        <div class="fg">
+          <label>Your Name</label>
+          <input type="text" name="name" required placeholder="Enter your name" autocomplete="name">
+        </div>
+        <div class="fg">
+          <label>Your Email</label>
+          <input type="email" name="email" required placeholder="Enter your email" autocomplete="email">
+        </div>
+      </div>
+      <div class="fg">
+        <label>Subject</label>
+        <input type="text" name="subject" placeholder="What's this about?" autocomplete="off">
+      </div>
+      <div class="fg">
+        <label>Your Message</label>
+        <textarea name="message" required placeholder="Tell me about your project..." autocomplete="off"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;display:flex;align-items:center;gap:.5rem" id="submitBtn">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+    </form>
+    <div class="social-links">
+      <a href="https://github.com/mdkamran623" class="social-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/md-kamran-365626373/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/kamran.khan056/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:kamraanm757@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span class="glow-txt">Portfolio</span> · All rights reserved Created by <span class="glow-txt">❤ MD KAMRAN</span></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
