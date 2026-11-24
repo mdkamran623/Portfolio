@@ -1,330 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MD KAMRAN - Full Stack Developer</title>
-<meta name="description" content="MD Kamran - Full Stack Developer. Building scalable web apps with modern technologies.">
-<meta name="google-site-verification" content="5mZiHkQ_SyAQIGEawgKsCRuPFvOTwZyd94HOA_JtLuA">
-<meta name="google-site-verification" content="KKo8POwBh3VmgEjsXEy_L6UxGnTBpPtueiaBy_826XI">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<meta name="google-site-verification" content="d4isJuSV5pY1kuRwiVZrdG6DeSc_VMLHo2TyfOxhED0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD KAMRAN | Full Stack & AI Developer</title>
+  <meta name="theme-color" content="#030712">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-  <div class="ld-logo">MK</div>
-  <div class="ld-bar"><div class="ld-fill" id="ldFill"></div></div>
-  <div class="ld-pct" id="ldPct">0%</div>
-</div>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
 
-<div id="sp"></div>
-<div id="cur"></div>
-<div id="cur2"></div>
-
-<!-- BG -->
-<div class="bg-wrap">
-  <div class="bg-orb o1"></div>
-  <div class="bg-orb o2"></div>
-  <div class="bg-orb o3"></div>
-</div>
-<div class="bg-grid"></div>
-<canvas id="stars"></canvas>
-
-<!-- NAV -->
-<nav id="nav">
-  <div class="logo">MD KAMRAN</div>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="#contact" class="hire-btn">Hire Me</a>
-  <div class="menu-toggle" id="menuToggle">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="home">
-  <div class="particles" id="particles"></div>
-  <div class="hero-content">
-    <div class="hero-tag">
-      <div class="hero-tag-dot"></div>
-      <span>Available for Freelance Projects</span>
-    </div>
-    <h1 class="hero-name" data-text="MD KAMRAN">MD KAMRAN</h1>
-    <div class="hero-typed">
-      I craft <span class="typed-word" id="typedWord">scalable web apps</span>
-    </div>
-    <p class="hero-desc">Full Stack Developer · Creative Designer · Problem Solver<br>Turning complex ideas into elegant, high-performance digital experiences.</p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn btn-primary">View My Work</a>
-      <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-    </div>
-  </div>
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <div class="scroll-mouse"></div>
-  </div>
-</section>
-
-<!-- ABOUT / DP -->
-<section id="about" class="reveal">
-  <div class="dp-container">
-    <div class="dp-wrapper">
-      <div class="dp-spin"></div>
-      <div class="dp-spin2"></div>
-      <div class="dp-ring r1"></div>
-      <div class="dp-ring r2"></div>
-      <div class="dp-ring r3"></div>
-      <div class="dp-frame">
-        <img src="MD KAMRAN-DP.jpg" alt="MD Kamran" onerror="this.parentElement.innerHTML='<div class=dp-placeholder>MK</div>'">
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="wrap nav">
+      <a href="#home" class="logo">MD KAMRAN<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
       </div>
-      <div class="dp-corner tl"></div>
-      <div class="dp-corner br"></div>
-    </div>
-    <div class="dp-info reveal-r">
-      <div class="sec-label">About Me</div>
-      <h2 class="sec-title">MD KAMRAN</h2>
-      <h3>Full Stack Developer</h3>
-      <p>Passionate about creating innovative digital solutions that fuse cutting-edge technology with stunning design. I transform complex problems into elegant, user-friendly experiences — from pixel-perfect frontends to rock-solid backends.</p>
-      <p>My journey in tech is driven by curiosity and an unrelenting desire to push boundaries. I believe great software should be fast, beautiful, and accessible to everyone.</p>
-      <div class="dp-stats">
-        <div class="stat-card stagger-item">
-          <span class="stat-num" data-target="30">0</span>
-          <div class="stat-lbl">Projects</div>
-        </div>
-        <div class="stat-card stagger-item" style="transition-delay:.1s">
-          <span class="stat-num" data-target="2">0</span>
-          <div class="stat-lbl">Years Exp</div>
-        </div>
-        <div class="stat-card stagger-item" style="transition-delay:.2s">
-          <span class="stat-num" data-target="100">0</span>
-          <div class="stat-lbl">% Satisfied</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="reveal">
-  <div style="text-align:center;margin-bottom:4rem">
-    <div class="sec-label" style="justify-content:center">Technical Arsenal</div>
-    <h2 class="sec-title" style="text-align:center">My Skills</h2>
-    <div class="sec-line" style="margin:1.5rem auto 0"></div>
-  </div>
-  <div class="skills-grid">
-    <div class="skill-card stagger-item">
-      <span class="sk-icon">⚛️</span>
-      <div class="sk-name">React.js</div>
-      <div class="sk-bar"><div class="sk-fill" data-w="95"></div></div>
-      <div class="sk-pct">95%</div>
-    </div>
-    <div class="skill-card stagger-item" style="transition-delay:.08s">
-      <span class="sk-icon">💻</span>
-      <div class="sk-name">JavaScript</div>
-      <div class="sk-bar"><div class="sk-fill" data-w="90"></div></div>
-      <div class="sk-pct">90%</div>
-    </div>
-    <div class="skill-card stagger-item" style="transition-delay:.16s">
-      <span class="sk-icon">🚀</span>
-      <div class="sk-name">HTML5 / CSS3</div>
-      <div class="sk-bar"><div class="sk-fill" data-w="95"></div></div>
-      <div class="sk-pct">95%</div>
-    </div>
-    <div class="skill-card stagger-item" style="transition-delay:.24s">
-      <span class="sk-icon">☕</span>
-      <div class="sk-name">Java</div>
-      <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div>
-      <div class="sk-pct">85%</div>
-    </div>
-    <div class="skill-card stagger-item" style="transition-delay:.32s">
-      <span class="sk-icon">🐍</span>
-      <div class="sk-name">Python</div>
-      <div class="sk-bar"><div class="sk-fill" data-w="80"></div></div>
-      <div class="sk-pct">80%</div>
-    </div>
-    <div class="skill-card stagger-item" style="transition-delay:.4s">
-      <span class="sk-icon">🗄️</span>
-      <div class="sk-name">SQL / MongoDB</div>
-      <div class="sk-bar"><div class="sk-fill" data-w="78"></div></div>
-      <div class="sk-pct">78%</div>
-    </div>
-    <div class="skill-card stagger-item" style="transition-delay:.48s">
-      <span class="sk-icon">🐙</span>
-      <div class="sk-name">Git / GitHub</div>
-      <div class="sk-bar"><div class="sk-fill" data-w="88"></div></div>
-      <div class="sk-pct">88%</div>
-    </div>
-    <div class="skill-card stagger-item" style="transition-delay:.56s">
-      <span class="sk-icon">🎨</span>
-      <div class="sk-name">UI / UX Design</div>
-      <div class="sk-bar"><div class="sk-fill" data-w="82"></div></div>
-      <div class="sk-pct">82%</div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="reveal">
-  <div style="margin-bottom:3rem">
-    <div class="sec-label">My Work</div>
-    <h2 class="sec-title">Featured Projects</h2>
-    <div class="sec-line"></div>
-  </div>
-  <div class="proj-filter">
-    <button class="flt-btn active" data-f="all">All Projects</button>
-    <button class="flt-btn" data-f="clone">Clones</button>
-    <button class="flt-btn" data-f="app">Web Apps</button>
-    <button class="flt-btn" data-f="map">Interactive</button>
-  </div>
-  <div class="projects-grid">
-
-    <!-- Amazon Clone -->
-    <div class="project-card stagger-item" data-cat="clone">
-      <div class="proj-img">
-        <div class="proj-img-bg" style="background:linear-gradient(135deg,#131921,#232f3e,#ff9900,#1a1a2e)"></div>
-        <div class="proj-img-shine"></div>
-        <span class="proj-emoji">🛒</span>
-      </div>
-      <div class="proj-overlay">
-        <div class="proj-links">
-          <a href="https://mdkamran623.github.io/Amazon-clone/" target="_blank" rel="noopener" class="proj-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          <a href="https://github.com/mdkamran623/Amazon-clone" target="_blank" rel="noopener" class="proj-link code"><i class="fab fa-github"></i> Code</a>
-        </div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-cat">E-Commerce Clone</div>
-        <div class="proj-title">Amazon Clone</div>
-        <p class="proj-desc">A pixel-perfect, fully responsive clone of the Amazon homepage featuring a real-like navigation bar, hero banner, product grid cards, department categories, and a polished footer — all built from scratch with pure HTML & CSS.</p>
-        <div class="proj-tech">
-          <span>HTML5</span><span>CSS3</span><span>Responsive</span><span>UI Clone</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- To-do App -->
-    <div class="project-card stagger-item" data-cat="app" style="transition-delay:.1s">
-      <div class="proj-img">
-        <div class="proj-img-bg" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364,#00ff88)"></div>
-        <div class="proj-img-shine"></div>
-        <span class="proj-emoji">✅</span>
-      </div>
-      <div class="proj-overlay">
-        <div class="proj-links">
-          <a href="https://mdkamran623.github.io/To-do-app/" target="_blank" rel="noopener" class="proj-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          <a href="https://github.com/mdkamran623/To-do-app" target="_blank" rel="noopener" class="proj-link code"><i class="fab fa-github"></i> Code</a>
-        </div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-cat">Productivity App</div>
-        <div class="proj-title">To-Do App</div>
-        <p class="proj-desc">A sleek, fully functional task management app with add/delete tasks, mark-complete toggle, local persistence, and a clean animated UI. Lightweight, fast, and zero dependencies — pure vanilla JavaScript magic.</p>
-        <div class="proj-tech">
-          <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>LocalStorage</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Macet Clone -->
-    <div class="project-card stagger-item" data-cat="clone" style="transition-delay:.2s">
-      <div class="proj-img">
-        <div class="proj-img-bg" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460,#e94560)"></div>
-        <div class="proj-img-shine"></div>
-        <span class="proj-emoji">🎯</span>
-      </div>
-      <div class="proj-overlay">
-        <div class="proj-links">
-          <a href="https://ak-project-macet-clone.netlify.app/" target="_blank" rel="noopener" class="proj-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        </div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-cat">Website Clone</div>
-        <div class="proj-title">Macet Clone</div>
-        <p class="proj-desc">A high-fidelity recreation of the Macet platform UI with smooth scroll behaviour, modern card layouts, animated sections, responsive breakpoints, and carefully matched typography and colour schemes.</p>
-        <div class="proj-tech">
-          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Netlify</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- World Map 2026 -->
-    <div class="project-card stagger-item" data-cat="map" style="transition-delay:.3s">
-      <div class="proj-img">
-        <div class="proj-img-bg" style="background:linear-gradient(135deg,#000428,#004e92,#00c6ff,#0072ff)"></div>
-        <div class="proj-img-shine"></div>
-        <span class="proj-emoji">🌍</span>
-      </div>
-      <div class="proj-overlay">
-        <div class="proj-links">
-          <a href="https://world-map-2026.netlify.app/" target="_blank" rel="noopener" class="proj-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        </div>
-      </div>
-      <div class="proj-body">
-        <div class="proj-cat">Interactive App</div>
-        <div class="proj-title">World Map 2026</div>
-        <p class="proj-desc">An interactive world map application featuring clickable countries, real-time country info display, hover highlighting, zoom/pan controls, and dynamic data overlays — a beautiful geography explorer for 2026.</p>
-        <div class="proj-tech">
-          <span>JavaScript</span><span>SVG</span><span>Geo Data</span><span>Netlify</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="reveal">
-  <div class="contact-wrap">
-    <div style="text-align:center;margin-bottom:1rem">
-      <div class="sec-label" style="justify-content:center">Let's Connect</div>
-      <h2 class="sec-title" style="text-align:center">Get In Touch</h2>
-      <div class="sec-line" style="margin:1.5rem auto 0"></div>
-    </div>
-    <p style="text-align:center;color:var(--txt2);font-size:1.1rem;margin-bottom:.5rem">Have a project in mind? Let's work together to create something amazing!</p>
-    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mykdjkgl" method="post">
-      <div class="fg-row">
-        <div class="fg">
-          <label>Your Name</label>
-          <input type="text" name="name" required placeholder="Enter your name" autocomplete="name">
-        </div>
-        <div class="fg">
-          <label>Your Email</label>
-          <input type="email" name="email" required placeholder="Enter your email" autocomplete="email">
-        </div>
-      </div>
-      <div class="fg">
-        <label>Subject</label>
-        <input type="text" name="subject" placeholder="What's this about?" autocomplete="off">
-      </div>
-      <div class="fg">
-        <label>Your Message</label>
-        <textarea name="message" required placeholder="Tell me about your project..." autocomplete="off"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;display:flex;align-items:center;gap:.5rem" id="submitBtn">
-        <i class="fas fa-paper-plane"></i> Send Message
+      <a href="#contact" class="nav-btn">Let's Talk</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu">
+        <div class="line"></div><div class="line"></div>
       </button>
-    </form>
-    <div class="social-links">
-      <a href="https://github.com/mdkamran623" class="social-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/md-kamran-365626373/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/kamran.khan056/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-      <a href="mailto:kamraanm757@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 <span class="glow-txt">Portfolio</span> · All rights reserved Created by <span class="glow-txt">❤ MD KAMRAN</span></p>
-</footer>
-<script src="script.js"></script>
+  <main class="wrap">
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <div class="badge">
+          <span class="dot"></span> Available for Internships
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm MD Kamran.<br>
+          I craft <span class="gradient-text">AI-powered</span> web experiences.
+        </h1>
+        <p class="hero-desc">
+          2nd year B.Tech student at MACET Patna. I turn complex ideas into elegant, deployed, working software — dashboards, assistants, and tools people actually use.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="glass-frame">
+          <img src="kamran-github-dp.png" alt="MD Kamran">
+        </div>
+        <div class="floating-chip">
+          <span class="icon">📍</span> Patna, Bihar
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-header reveal">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">A little about me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a full stack developer and engineering student who learns best by shipping. My recent flagship project, <strong>Swasthya‑Drishti 1.0</strong>, is an AI-powered district health dashboard built for a national hackathon.</p>
+          <p>Beyond hackathons, I build tools for everyday problems: a Gemini-powered assistant for my college, a free coding agent, and analytics dashboards. Every project below is deployed and linked — not just a screenshot.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="info-row"><span>College</span><span>MACET, Patna</span></div>
+          <div class="info-row"><span>Year</span><span>2nd Year, B.Tech</span></div>
+          <div class="info-row"><span>Focus</span><span>Full Stack + AI</span></div>
+          <div class="info-row"><span>Status</span><span class="text-green">Open to work</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-header reveal">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">What I work with</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+        <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"><span>Flask</span></div>
+        <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"><span>JavaScript</span></div>
+        <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML / CSS</span></div>
+        <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"><span>Firebase</span></div>
+        <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify"><span>Netlify</span></div>
+        <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git / GitHub</span></div>
+        <div class="skill-card reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel"><span>Vercel</span></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (Bento Grid) -->
+    <section class="section" id="projects">
+      <div class="section-header reveal">
+        <span class="section-tag">03 — Work</span>
+        <h2 class="section-title">Selected Projects</h2>
+      </div>
+      <div class="bento-grid">
+        
+        <!-- Project 1: Mausam Ganga -->
+        <a href="https://sih-2026-macet-nexus.vercel.app/" target="_blank" class="bento-card large reveal">
+          <div class="bento-content">
+            <div class="tags"><span>SIH 2026</span><span>PWA</span></div>
+            <h3>Mausam Ganga</h3>
+            <p>Personalized Weather Intelligence for India. Built for MoES SIH 2026 using Open-Meteo API and a rule-based AI engine to adapt to user personas.</p>
+            
+            <div class="team-section">
+              <span class="team-label">Team MACET NEXUS</span>
+              <div class="team-members">
+                <span>MD ADIL (Lead)</span> · <span>MD KAMRAN</span> · <span>MOHAMMAD SUFIYAN</span> · <span>MD KAUSAR</span> · <span>SWARN DEEP</span>· <span>FARIYA AKBAR</span>
+              </div>
+            </div>
+            
+            <div class="project-link">View Live Project <span class="arrow">↗</span></div>
+          </div>
+          <div class="bento-visual">
+            <div class="glow"></div>
+            <span class="big-icon">⛅</span>
+          </div>
+        </a>
+
+        <!-- Project 2: Swasthya-Drishti -->
+        <a href="https://swasthya-drishti-1-0.onrender.com/" target="_blank" class="bento-card large reveal">
+          <div class="bento-content">
+            <div class="tags"><span>Google Hackathon</span><span>AI</span></div>
+            <h3>Swasthya‑Drishti 1.0</h3>
+            <p>AI-powered district health management dashboard for Patna's PHCs/CHCs. Built with Flask + Gemini 1.5 Flash for the "Build with AI" hackathon.</p>
+            
+            <div class="team-section">
+              <span class="team-label">Core Team</span>
+              <div class="team-members">
+                <span>MD KAMRAN (Lead)</span> · <span>ASAD AZHAR</span> · <span>MD AFZAL</span> · <span>MD KAIF</span>
+              </div>
+            </div>
+            
+            <div class="project-link">View Live App <span class="arrow">↗</span></div>
+          </div>
+          <div class="bento-visual">
+            <div class="glow"></div>
+            <span class="big-icon">🏥</span>
+          </div>
+        </a>
+
+        <!-- Project 3: MACET AI -->
+        <a href="https://macet-ai-assistant.netlify.app/" target="_blank" class="bento-card small reveal">
+          <div class="bento-content">
+            <div class="tags"><span>IBM</span><span>Gemini</span></div>
+            <h3>MACET AI Assistant</h3>
+            <p>Gemini-powered chat assistant for MACET students. Built for IBM Gen AI Cloud Computing Internship.</p>
+            <div class="project-link">Visit <span class="arrow">↗</span></div>
+          </div>
+        </a>
+
+        <!-- Project 4: Blinkit -->
+        <a href="https://mdkamran623.github.io/Blinkit-Sales-Marketing-Dashboard" target="_blank" class="bento-card small reveal">
+          <div class="bento-content">
+            <div class="tags"><span>Data Viz</span><span>JS</span></div>
+            <h3>Blinkit Dashboard</h3>
+            <p>Interactive analytics dashboard breaking down sales and marketing performance, Power BI-style.</p>
+            <div class="project-link">Visit <span class="arrow">↗</span></div>
+          </div>
+        </a>
+
+        <!-- Project 5: Amazon Clone -->
+        <a href="https://mdkamran623.github.io/Amazon.in-clone/" target="_blank" class="bento-card small reveal">
+          <div class="bento-content">
+            <div class="tags"><span>Frontend</span><span>CSS</span></div>
+            <h3>Amazon Clone</h3>
+            <p>A pixel-perfect frontend clone of the Amazon e-commerce platform built with vanilla HTML, CSS & JS.</p>
+            <div class="project-link">Visit <span class="arrow">↗</span></div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section" id="certificates">
+      <div class="section-header reveal">
+        <span class="section-tag">04 — Achievements</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-img"><img src="certs/Smart India Hackathon Participation Certificate.png" alt="SIH 2026"></div>
+          <div class="cert-info"><h4>Smart India Hackathon 2026</h4><p>MACET Patna</p></div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-img"><img src="certs/ibm-gen-ai-cloud.jpg" alt="IBM"></div>
+          <div class="cert-info"><h4>IBM Gen AI & Cloud</h4><p>AICTE & IBM SkillsBuild</p></div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-img"><img src="certs/deloitte-data-analytics.jpg" alt="Deloitte"></div>
+          <div class="cert-info"><h4>Data Analytics Job Sim</h4><p>Deloitte · Forage</p></div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-img"><img src="certs/Bihar-Ai-Submit.png" alt="Bihar AI"></div>
+          <div class="cert-info"><h4>Bihar AI Summit</h4><p>Dept of IT, Govt of Bihar</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="contact-box reveal">
+        <div class="contact-left">
+          <h2>Let's build<br>something great.</h2>
+          <p>Open for internships, freelance web builds, and hackathon teams. Drop a message and I'll respond within 24 hours.</p>
+          <div class="social-links">
+            <a href="mailto:mdkamran32386@gmail.com">Email ↗</a>
+            <a href="https://github.com/mdkamran623" target="_blank">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/md-kamran-365626373/" target="_blank">LinkedIn ↗</a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="logo">MD KAMRAN<span>.</span></div>
+      <p>© 2026 All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
